@@ -1,7 +1,7 @@
 import Image from 'next/image'; 
 import Link from 'next/link';
 import ProductGrid from './components/latestproduct';
-import Shopes from './components/shopes';
+import Shopes from './shopes';
 // import Uniquefeature from './components/uniquefeature';
 
 export default function HomePage() {
@@ -53,6 +53,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4].map((id) => (
               <div key={id} className="border rounded-lg p-4 text-center">
+                
                 <Image src="/images/chair1.png" alt="Unique Product" width="300" height="300"/>
                 <h3 className="text-lg font-medium">Comfort Handy Craft</h3>
                 <p className="text-primary text-xl font-bold">$42.00</p>

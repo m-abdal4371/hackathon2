@@ -10,10 +10,10 @@ const Shopes = () => {
               What Shopex Offers
             </h1>
           </div>
-          <div className="flex flex-wrap justify-center -m-4"> {/* Centered the items */}
+          <div className="flex flex-wrap justify-center -m-4">
             {[...Array(4)].map((_, index) => (
-              <div key={index} className="p-4 lg:w-1/4 md:w-1/2 w-full"> {/* Ensured full width on smaller screens */}
-                <div className="h-full flex flex-col items-center text-center bg-white rounded-lg shadow-md p-6"> {/* Added background, rounded corners, and shadow */}
+              <div key={index} className="p-4 lg:w-1/4 md:w-1/2 w-full">
+                <div className="h-full flex flex-col items-center text-center bg-white rounded-lg shadow-md p-6">
                   <h2 className="title-font font-medium text-lg text-gray-900">
                     {["Alper Kamu", "Holden Caulfield", "Atticus Finch", "Henry Letham"][index]}
                   </h2>

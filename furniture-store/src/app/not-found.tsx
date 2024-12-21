@@ -14,9 +14,6 @@ const NotFoundPage = () => {
       <main className="flex items-center justify-center bg-gray-50 py-20">
         <div className="text-center">
           <h1 className="text-4xl font-semibold text-gray-800">404 Not Found</h1>
-          <p className="text-xl text-gray-600 mt-4">Oops! The page you requested was not found!</p>
-
-          {/* Image with responsive design */}
           <div className="mt-8">
             <Image
               src="/images/404.png" // Make sure the image exists in the 'public/images' folder
@@ -25,11 +22,12 @@ const NotFoundPage = () => {
               height={526.6}
               className="max-w-full h-auto mx-auto"
             />
+            <p className="text-xl text-gray-600 mt-4">Oops! The page you requested was not found!</p>
           </div>
 
           <Link
             href="/"
-            className="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-600"
+            className="mt-6 inline-block bg-blue-500 text-white hover:bg-pink-600 hover:text-white px-6 py-3 rounded-md text-lg "
           >
             Back To Home
           </Link>

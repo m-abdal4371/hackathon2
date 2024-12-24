@@ -15,7 +15,7 @@ const ProductGrid1 = () => {
         <div className="flex flex-wrap justify-center -m-4">
           {products.map((product) => (
             <div key={product.id} className="lg:w-1/3 md:w-1/2 p-4 w-full"> 
-              <div className="block relative h-48 rounded overflow-hidden cursor-pointer hover:shadow-lg transition">
+              <div className="block relative h-48 rounded overflow-hidden cursor-pointer hover:bg-violet-800 hover:shadow-lg transition">
                 <Image
                   alt={product.name}
                   className="object-cover object-center w-full h-full block"
@@ -25,15 +25,15 @@ const ProductGrid1 = () => {
                 />
               </div>
               
-              {/* <div className="mt-4 text-center">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+              <div className="mt-4 text-center hover:bg-violet-800">
+                <h3 className="text-gray-500 hover:bg-violet-800 text-xs tracking-widest title-font mb-1">
                   CATEGORY
                 </h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">
+                <h2 className="text-gray-900 hover:bg-violet-800 title-font text-lg font-medium">
                   {product.name}
                 </h2>
-                <p className="mt-1">{product.price}</p>
-              </div> */}
+                <p className="hover:bg-violet-800 mt-1">{product.price}</p>
+              </div>
             </div>
           ))}
         </div>

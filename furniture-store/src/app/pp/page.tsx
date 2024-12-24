@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
 
-const Latestproduct = () => {
+const pp = () => {
 
 
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Section Title */}
-        <h2 className="text-2xl text-violet-950 font-bold text-center mb-8">Latest Products</h2>
+        <h2 className="text-2xl font-bold text-center mb-8">Pages Products</h2>
 
         {/* Categories */}
         <div className="flex justify-center space-x-4 sm:space-x-2 mb-6">
@@ -117,4 +117,4 @@ const Latestproduct = () => {
   );
 };
 
-export default Latestproduct;
+export default pp;

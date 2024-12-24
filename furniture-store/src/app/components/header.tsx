@@ -1,73 +1,116 @@
-import Link from "next/link"
-import { Mail, Phone, ChevronDown, User, Heart, ShoppingCart, Search } from 'lucide-react'
+"use client"
+import { IoIosSearch, IoIosArrowDown } from "react-icons/io";
+import { RiAccountBoxFill } from "react-icons/ri";
+import { FaRegHeart } from "react-icons/fa";
+import { CiShoppingCart } from "react-icons/ci";
+//import { useState } from "react";
+import Link from "next/link";
+// , IoIosMenu
+const Header = () => {
+    //const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export default function Header() {
-  return (
-    <header className="w-full bg-[#7E33E0]">
-      <div className="container mx-auto">
-        {/* Top bar */}
-        <div className="flex items-center justify-between py-2 text-sm text-white">
-          <div className="flex items-center gap-8">
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4" />
-              <span>mhhasanul@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              <span>(12345)67890</span>
-            </div>
+    return (
+        <header className="bg-[#7E33E0] text-white">
+            {/* Top Header */}
+            <div className="flex flex-wrap justify-between items-center px-4 md:px-8 py-2 text-sm">
+        {/* Left Section */}
+        <div className="flex items-center space-x-4">
+          <span className="flex items-center space-x-2">
+            <span role="img" aria-label="email">📧</span>
+            <a href="mailto:mihasamul@gmail.com" className="hover:underline">
+              mihasamul@gmail.com
+            </a>
+          </span>
+          <span>(12345) 678900</span>
+        </div>
+
+        {/* Right Section */}
+        <div className="flex flex-wrap items-center space-x-4 mt-2 md:mt-0">
+          <div className="flex items-center space-x-1">
+            <span>English</span>
+            <IoIosArrowDown />
           </div>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1">
-              English
-              <ChevronDown className="h-4 w-4" />
-            </div>
-            <div className="flex items-center gap-1">
-              USD
-              <ChevronDown className="h-4 w-4" />
-            </div>
-            <Link href="/login" className="flex items-center gap-1">
+          <div className="flex items-center space-x-1">
+            <span>USD</span>
+            <IoIosArrowDown />
+          </div>
+          <div className="flex items-center space-x-1">
+            <a href="#" className="hover:underline">
               Login
-              <User className="h-4 w-4" />
-            </Link>
-            <Link href="/wishlist" className="flex items-center gap-1">
+            </a>
+            <RiAccountBoxFill className="text-lg" />
+          </div>
+          <div className="flex items-center space-x-1">
+            <a href="#" className="hover:underline">
               Wishlist
-              <Heart className="h-4 w-4" />
-            </Link>
-            <Link href="/cart">
-              <ShoppingCart className="h-4 w-4" />
-            </Link>
+            </a>
+            <FaRegHeart className="text-lg" />
+          </div>
+          <div className="flex items-center space-x-1">
+            <a href="#" className="hover:underline">
+              <CiShoppingCart className="text-xl" />
+            </a>
           </div>
         </div>
       </div>
 
-      {/* Main navigation */}
-      <div className="w-full bg-white">
-        <div className="container mx-auto flex items-center justify-between py-4">
-          <Link href="/" className="text-2xl font-bold text-indigo-950">
-            Hekto
-          </Link>
-          <nav className="flex gap-8">
-            <Link href="/" className="text-indigo-950 hover:text-pink-500">
-              Home
-            </Link>
-            <Link href="/pages" className="text-indigo-950 hover:text-pink-500">Pages</Link>
-            <Link href="/products" className="text-indigo-950 hover:text-pink-500">Products</Link>
-            <Link href="/blog" className="text-indigo-950 hover:text-pink-500">Blog</Link>
-            <Link href="/shop" className="text-indigo-950 hover:text-pink-500">Shop</Link>
-            <Link href="/contact" className="text-indigo-950 hover:text-pink-500">Contact</Link>
-          </nav>
-          <div className="relative">
-            <input
-              type="search"
-              placeholder="Search..."
-              className="rounded-md border px-4 py-2 pr-10"
-            />
-            <Search className="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
-          </div>
-        </div>
-      </div>
-    </header>
-  )
-}
+            {/* Lower Header */}
+            <div className="bg-white text-indigo-950">
+                <div className="container mx-auto px-4 md:px-8 py-3 flex justify-between items-center">
+                    {/* Logo */}
+                    <h1 className="text-xl font-bold">Hekto</h1>
+
+                    {/* Navigation Menu */}
+                    <ul className="hidden md:flex space-x-6">
+                        <li>
+                            <Link href="#" className="hover:text-purple-600">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="../pp" className="hover:text-purple-600">
+                                Pages
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="../latest" className="hover:text-purple-600">
+                                Products
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="../blog" className="hover:text-purple-600">
+                                Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="../shoplist" className="hover:text-purple-600">
+                                Shop
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="../contact" className="hover:text-purple-600">
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+
+                    {/* Search Bar */}
+                    <div className="flex items-center space-x-2">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            className="border rounded-l-md px-3 py-1 focus:outline-none"
+                        />
+                        <button className="bg-pink-500 text-white px-4 py-1 rounded-r-md hover:bg-pink-600">
+                            <IoIosSearch />
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    );
+};
+
+export default Header;
 

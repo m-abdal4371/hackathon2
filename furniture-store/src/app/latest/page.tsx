@@ -1,5 +1,5 @@
 import React from 'react'
-import Latestproduct from '../components/Latestproduct'
+import Latestproduct from '../components/latestproduct'
 
 const page = () => {
   return (

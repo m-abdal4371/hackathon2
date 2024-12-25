@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import pic from '../public/images/chair1.png'
 const Hero = () => {
   return (
     <div>
@@ -33,6 +34,7 @@ const Hero = () => {
           width={500}
           height={500}
         />
+        <Image src={pic} alt="Hero Image" className="w-full h-auto object-contain rounded-md" />
       </div>
     </div>
   </div>

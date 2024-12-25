@@ -5,14 +5,14 @@ const FeaturedProducts = () => {
     {
       id: 1,
       name: "Cantilever chair",
-      code: "YU023",
+      code: "Y523201",
       price: "$42.00",
       image: "/images/kursi1.png", 
     },
     {
       id: 2,
       name: "Cantilever chair",
-      code: "YU024",
+      code: "Y523201",
       price: "$42.00",
       image: "/images/kursi2.png",
       isNew: true,
@@ -20,14 +20,14 @@ const FeaturedProducts = () => {
     {
       id: 3,
       name: "Cantilever chair",
-      code: "YU025",
+      code: "Y523201",
       price: "$42.00",
       image: "/images/kursi3.png",
     },
     {
       id: 4,
       name: "Cantilever chair",
-      code: "YU026",
+      code: "Y523201",
       price: "$42.00",
       image: "/images/kursi4.png",
     },
@@ -40,15 +40,15 @@ const FeaturedProducts = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-white shadow-md rounded-lg overflow-hidden p-4 transition-transform transform hover:scale-105"
+            className="bg-white text-violet-950 hover:bg-violet-800 hover:text-white shadow-md rounded-lg overflow-hidden p-4 transition-transform transform hover:scale-105"
           >
-            <div className="relative">
+            <div className=" bg-white hover:bg-white relative max-w-full">
               <Image
                 src={product.image}
                 alt={product.name}
                 width={200}
                 height={200}
-                className="object-contain w-full h-40"
+                className="object-contain w-full h-40 hover:bg-white"
               />
               {product.isNew && (
                 <div className="absolute top-2 right-2 bg-pink-500 text-white text-xs px-2 py-1 rounded">
@@ -56,10 +56,16 @@ const FeaturedProducts = () => {
                 </div>
               )}
             </div>
-            <div className="mt-4 text-center">
-              <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-              <p className="text-sm text-gray-500">Code: {product.code}</p>
-              <p className="text-xl font-bold text-gray-900">{product.price}</p>
+            <div className="mt-4 text-center hover:text-white">
+            <h3 className="text-lg font-semibold text-pink-500 ">{product.name}</h3>
+            <div className=" flex justify-center space-x-0.5 border-hidden">
+            <span className="w-3 h-1 rounded-full bg-green-500"></span>
+            <span className="w-3 h-1 rounded-full bg-pink-500"></span>
+            <span className="w-3 h-1 rounded-full bg-blue-500"></span>
+          </div>
+            <p className="text-sm">Code: {product.code}</p>
+              <p className="text-xl font-bold">{product.price}</p>
+
             </div>
           </div>
         ))}

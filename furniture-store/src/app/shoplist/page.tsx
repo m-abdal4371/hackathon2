@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 const FeaturedProducts = () => {
   const products = [
     {
@@ -96,8 +95,13 @@ const FeaturedProducts = () => {
 
   return (
     <div className="bg-gray-50 py-10 px-4">
-      <h2 className="text-2xl font-bold text-center mb-8">Shop List</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-7xl h-28 mx-auto text-center mb-8 bg-violet-50">
+          <h1 className="text-3xl  font-bold text-gray-800">Shop List</h1>
+          <p className=" text-sm text-gray-500 mt-3">
+            Home &gt; Pages &gt; <span className="text-purple-600">Shop List</span>
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.id}
@@ -119,8 +123,13 @@ const FeaturedProducts = () => {
             </div>
             <div className="mt-4 text-center">
               <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-              <p className="text-sm text-gray-500">Code: {product.code}</p>
-              <p className="text-xl font-bold text-gray-900">{product.price}</p>
+              <div className=" flex justify-center space-x-1">
+            <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+            <span className="w-2 h-2 rounded-full bg-pink-500"></span>
+            <span className="w-2 h-2 rounded-full bg-yellow-500"></span>
+          </div>
+          <p className="text-sm text-gray-500">Code: {product.code}</p>
+          <p className="text-xl font-bold text-gray-900">{product.price}</p>
             </div>
           </div>
         ))}

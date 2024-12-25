@@ -1,6 +1,12 @@
+"use client";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 const ContactUs = () => {
+  const router = useRouter();
+
+  const handleAboutUsClick = () => {
+    router.push('/AboutUs'); // Navigate to About Us page
+  };
   return (
     <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       {/* Header */}
@@ -23,6 +29,14 @@ const ContactUs = () => {
             <span className="w-4 h-4 rounded-full bg-pink-500"></span>
             <span className="w-4 h-4 rounded-full bg-yellow-500"></span>
           </div>
+          <div>
+          <button 
+            type="button"
+            onClick={handleAboutUsClick}
+            className="bg-pink-500 text-white px-4 py-2 rounded-md shadow hover:bg-pink-600"
+          >
+            Go to About Us
+          </button></div>
         </div>
 
         {/* Contact Way */}

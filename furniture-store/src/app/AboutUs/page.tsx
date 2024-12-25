@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import aboutus1 from '../public/images/aboutus1.png'
 
 const AboutUs = () => {
   return (
@@ -17,13 +18,7 @@ const AboutUs = () => {
         <p className="text-gray-500 text-center mb-10">Home &gt; Pages &gt; About Us</p>
         <section className="flex flex-col md:flex-row items-center mb-16">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <Image
-              src="/images/aboutus1" 
-              alt="About Us"
-              width={500}
-              height={300}
-              className="rounded-lg shadow-lg"
-            />
+            <Image src={aboutus1} alt="About Us" width={500} height={300} className="rounded-lg shadow-lg" />
           </div>
           <div className="w-full md:w-1/2 pl-0 md:pl-10">
             <h2 className="text-2xl font-bold mb-4">Know About Our Ecommerce Business, History</h2>

@@ -1,5 +1,9 @@
 "use client";
 import Image from "next/image";
+import w1 from "../public/w1.png";
+import w2 from "../public/w2.png";
+import w3 from "../public/w3.png";
+import w4 from "../public/w4.png";
 
 const what = () => {
   const offers = [
@@ -7,25 +11,25 @@ const what = () => {
       id: 1,
       title: "24/7 Support",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
-      icon: "/images/w1.png", 
+      icon: w1, 
     },
     {
       id: 2,
       title: "Fast Delivery",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
-      icon: "/images/w2.png",
+      icon: w2,
     },
     {
       id: 3,
       title: "Secure Payment",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
-      icon: "/images/w3.png",
+      icon: w3,
     },
     {
       id: 4,
       title: "Quality Products",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
-      icon: "/images/w4.png",
+      icon: w4,
     },
   ];
 

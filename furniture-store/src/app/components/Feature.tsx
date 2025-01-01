@@ -1,4 +1,8 @@
 import Image from 'next/image';
+import kursi1 from '../public/images/kursi1.png';
+import kursi2 from '../public/images/kursi2.png';
+import kursi3 from '../public/images/kursi3.png';
+import kursi4 from '../public/images/kursi4.png';
 
 const FeaturedProducts = () => {
   const products = [
@@ -7,14 +11,14 @@ const FeaturedProducts = () => {
       name: "Cantilever chair",
       code: "Y523201",
       price: "$42.00",
-      image: "/images/kursi1.png", 
+      image: kursi1, 
     },
     {
       id: 2,
       name: "Cantilever chair",
       code: "Y523201",
       price: "$42.00",
-      image: "/images/kursi2.png",
+      image: kursi2,
       isNew: true,
     },
     {
@@ -22,14 +26,14 @@ const FeaturedProducts = () => {
       name: "Cantilever chair",
       code: "Y523201",
       price: "$42.00",
-      image: "/images/kursi3.png",
+      image: kursi3,
     },
     {
       id: 4,
       name: "Cantilever chair",
       code: "Y523201",
       price: "$42.00",
-      image: "/images/kursi4.png",
+      image: kursi4,
     },
   ];
 

@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import tt1 from '../public/images/tt1.png';
+import tt2 from '../public/images/tt2.png';
+import tt3 from '../public/images/tt3.png';
 
 const Top = () => {
   const products = [
@@ -7,14 +10,14 @@ const Top = () => {
       name: " Mini LCW Chair ",
       code: "YU023",
       price: "$56.00",
-      image: "/images/tt1.png", 
+      image: tt1, 
     },
     {
       id: 2,
       name: "Mini LCW Chair  ",
       code: "YU024",
       price: "$56.00",
-      image: "/images/tt2.png",
+      image: tt2,
       isNew: true,
     },
     {
@@ -22,14 +25,14 @@ const Top = () => {
       name: " Mini LCW Chair",
       code: "YU025",
       price: "$56.00",
-      image: "/images/tt3.png",
+      image: tt3,
     },
     {
       id: 4,
       name: " Mini LCW Chair",
       code: "YU026",
       price: "$56.00",
-      image: "/images/tt1.png",
+      image: tt1,
     },
   ];
 

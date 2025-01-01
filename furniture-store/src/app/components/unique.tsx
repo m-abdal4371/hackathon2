@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import bluesofa from '../public/images/bluesofa.png'
 
 const unique = () => {
   return (
@@ -9,7 +10,7 @@ const unique = () => {
       {/* Image Section */}
       <div className="relative h-72 lg:h-full">
         <Image
-          src="/images/bluesofa.png" 
+          src= {bluesofa} 
           alt="Trending Chair"
           layout="fill"
           objectFit="contain"

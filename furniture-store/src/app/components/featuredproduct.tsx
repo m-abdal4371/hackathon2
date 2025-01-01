@@ -1,12 +1,16 @@
 // components/ProductGrid.js
 import Image from 'next/image';
+import chair1 from '../public/images/chair1.png';
+import chair2 from '../public/images/chair2.png';
+import chair3 from '../public/images/chair3.png';
+import chair4 from '../public/images/chair4.png';
 
 const ProductGrid1 = () => {
   const products = [
-    { id: 1, name: 'Cantilever chair', price: '$42.00', image: '/images/chair1.png' },
-    { id: 2, name: 'Cantilever chair', price: '$42.00', image: '/images/chair2.png' },
-    { id: 3, name: 'Cantilever chair', price: '$42.00', image: '/images/chair3.png' },
-    { id: 4, name: 'Cantilever chair', price: '$42.00', image: '/images/chair4.png' },
+    { id: 1, name: 'Cantilever chair', price: '$42.00', image: chair1 },
+    { id: 2, name: 'Cantilever chair', price: '$42.00', image: chair2 },
+    { id: 3, name: 'Cantilever chair', price: '$42.00', image: chair3 },
+    { id: 4, name: 'Cantilever chair', price: '$42.00', image: chair4 },
   ];
 
   return (

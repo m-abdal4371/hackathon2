@@ -1,7 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import aboutus1 from '../public/images/aboutus1.png'
+import aboutus1 from '../public/images/aboutus1.png';
+import fd from '../public/images/fd.png';
+import cb from '../public/images/cb.png';
+import pq from '../public/images/pq.png';
+import hs from '../public/images/hs.png';
+import Group200 from '../public/images/Group200.png';
+
 
 const AboutUs = () => {
   return (
@@ -40,7 +46,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="bg-white shadow-md rounded-lg p-6">
               <Image
-                src="/images/fd.png" 
+                src={fd} 
                 alt="Free Delivery"
                 width={50}
                 height={50}
@@ -51,7 +57,7 @@ const AboutUs = () => {
             </div>
             <div className="bg-white shadow-md rounded-lg p-6">
               <Image
-                src="/images/cb.png" 
+                src= {cb} 
                 alt="100% Cash Back"
                 width={50}
                 height={50}
@@ -62,7 +68,7 @@ const AboutUs = () => {
             </div>
             <div className="bg-white shadow-md rounded-lg p-6">
               <Image
-                src="/images/pq.png" 
+                src={pq} 
                 alt="Quality Product"
                 width={50}
                 height={50}
@@ -73,7 +79,7 @@ const AboutUs = () => {
             </div>
             <div className="bg-white shadow-md rounded-lg p-6">
               <Image
-                src="/images/hs.png"
+                src={hs}
                 alt="24/7 Support"
                 width={50}
                 height={50}
@@ -91,7 +97,7 @@ const AboutUs = () => {
           <div className="bg-white shadow-md rounded-lg p-6 max-w-md mx-auto">
             <div className="flex items-center mb-4">
               <Image
-                src="/images/Group200.png" 
+                src= {Group200} 
                 alt="Client"
                 width={50}
                 height={50}

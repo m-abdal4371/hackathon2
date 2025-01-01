@@ -1,5 +1,12 @@
 
 import Image from "next/image";
+import brown from "../public/images/brown.png";
+import yellow from "../public/images/yellow.png";
+import white from "../public/images/white.png";
+import bbbwt from "../public/images/bbbwt.png";
+import bbblack from "../public/images/bbblack.png";
+import bbbw from "../public/images/bbbw.png";
+
 
 const Latestproduct = () => {
 
@@ -30,7 +37,7 @@ const Latestproduct = () => {
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[170px] bg-gray-200 flex justify-center items-center">
           
-              <Image src="/images/brown.png" width={150} height={100} alt="product-1" className="  transition-transform transform hover:scale-105 "/>
+              <Image src= {brown} width={150} height={100} alt="product-1" className="  transition-transform transform hover:scale-105 "/>
             </div>
             <div className="text-center mt-4">
               <p>Comfort Handy Craft</p>
@@ -44,7 +51,7 @@ const Latestproduct = () => {
           {/* Box 2 */}
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[170px] bg-gray-200 flex justify-center items-center">
-              <Image src="/images/yellow.png" width={150} height={100} alt="product-2" className=" transition-transform transform hover:scale-105 "/>
+              <Image src={yellow} width={150} height={100} alt="product-2" className=" transition-transform transform hover:scale-105 "/>
             </div>
             <div className="text-center mt-4">
               <p>Comfort Handy Craft</p>
@@ -58,7 +65,7 @@ const Latestproduct = () => {
           {/* Box 3 */}
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[170px] bg-gray-200 flex justify-center items-center">
-              <Image src="/images/white.png" width={150} height={100} alt="product-3" className=" transition-transform transform hover:scale-105 "/>
+              <Image src={white} width={150} height={100} alt="product-3" className=" transition-transform transform hover:scale-105 "/>
             </div>
             <div className="text-center mt-4">
               <p>Comfort Handy Craft</p>
@@ -72,7 +79,7 @@ const Latestproduct = () => {
           {/* Box 4 */}
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[170px] bg-gray-200 flex justify-center items-center">
-              <Image src="/images/bbbwt.png" width={150} height={100} alt="product-4" className=" transition-transform transform hover:scale-105 "/>
+              <Image src={bbbwt} width={150} height={100} alt="product-4" className=" transition-transform transform hover:scale-105 "/>
             </div>
             <div className="text-center mt-4">
               <p>Comfort Handy Craft</p>
@@ -86,7 +93,7 @@ const Latestproduct = () => {
           {/* Box 5 */}
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[170px] bg-gray-200 flex justify-center items-center">
-              <Image src="/images/bbblack.png" width={150} height={100} alt="product-5" className=" transition-transform transform hover:scale-105  " />
+              <Image src= {bbblack} width={150} height={100} alt="product-5" className=" transition-transform transform hover:scale-105  " />
             </div>
             <div className="text-center mt-4">
               <p>Comfort Handy Craft</p>
@@ -100,7 +107,7 @@ const Latestproduct = () => {
           {/* Box 6 */}
           <div className="flex flex-col items-center">
             <div className="w-[200px] h-[170px] bg-gray-200 flex justify-center items-center">
-              <Image src="/images/bbbw.png" width={150} height={100} alt="product-6" className=" transition-transform transform hover:scale-105 "/>
+              <Image src={bbbw} width={150} height={100} alt="product-6" className=" transition-transform transform hover:scale-105 "/>
             </div>
             <div className="text-center mt-4">
               <p>Comfort Handy Craft</p>

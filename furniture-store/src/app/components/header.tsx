@@ -63,7 +63,7 @@ const Header = () => {
                     {/* Navigation Menu */}
                     <ul className="hidden md:flex space-x-6">
                         <li>
-                            <Link href="#" className="hover:text-purple-600">
+                            <Link href="/" className="hover:text-purple-600">
                                 Home
                             </Link>
                         </li>

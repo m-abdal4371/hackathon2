@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
+import blog1 from '../public/images/blog1.png';
+import blog2 from '../public/images/blog2.png';
 
 
 const BlogPage = () => {
@@ -11,7 +13,7 @@ const BlogPage = () => {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae nibh auctor pellentesque cursus eu massa.",
                author: "Karl T. Mason",
                date: "Dec 24, 2024",
-            image: "/images/blog1.png",
+            image: blog1,
           },
           {
             id: 2,
@@ -20,7 +22,7 @@ const BlogPage = () => {
               "Condimentum mattis pellentesque id nibh tortor id aliquet. Non blandit massa enim nec dui nunc mattis.",
               author: "Karl T. Mason",
               date: "Dec 24, 2024",
-            image: "/images/blog2.png",
+            image: blog2,
           },
     ];
   

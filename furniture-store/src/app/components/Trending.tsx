@@ -1,4 +1,8 @@
 import Image from 'next/image';
+import tp1 from '../public/images/tp1.png';
+import tp2 from '../public/images/tp2.png';
+import tp3 from '../public/images/tp3.png';
+import tp4 from '../public/images/tp4.png';
 
 const Trending = () => {
   const products = [
@@ -7,14 +11,14 @@ const Trending = () => {
       name: "Cantilever chair",
       code: "YU023",
       price: "$320",
-      image: "/images/tp1.png", 
+      image: tp1, 
     },
     {
       id: 2,
       name: "Cantilever chair",
       code: "YU024",
       price: "$350",
-      image: "/images/tp2.png",
+      image: tp2,
       isNew: true,
     },
     {
@@ -22,14 +26,14 @@ const Trending = () => {
       name: "Cantilever chair",
       code: "YU025",
       price: "$300",
-      image: "/images/tp3.png",
+      image: tp3,
     },
     {
       id: 4,
       name: "Cantilever chair",
       code: "YU026",
       price: "$340",
-      image: "/images/tp4.png",
+      image: tp4,
     },
   ];
 

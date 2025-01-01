@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
-
+import b1 from '../public/images/b1.png';
+import b2 from '../public/images/b2.png';
 
 const Leatestblog = () => {
     const blogs = [
@@ -11,7 +12,7 @@ const Leatestblog = () => {
                 "More off this less hello samlande lied much over tightly circa horse taped mightly.",
             author: "Surfauxion ",
             date: "Dec 24, 2024",
-            image: "/images/b1.png",
+            image: b1,
         },
         {
             id: 2,
@@ -20,7 +21,7 @@ const Leatestblog = () => {
                 "More off this less hello samlande lied much over tightly circa horse taped mightly  .",
             author: "SaberAli ",
             date: "Dec 24, 2024",
-            image: "/images/b2.png",
+            image: b2,
         },
     ];
 

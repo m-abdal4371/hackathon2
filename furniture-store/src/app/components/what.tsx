@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import w1 from "../public/w1.png";
-import w2 from "../public/w2.png";
-import w3 from "../public/w3.png";
-import w4 from "../public/w4.png";
+import w1 from "../public/images/w1.png";
+import w2 from "../public/images/w2.png";
+import w3 from "../public/images/w3.png";
+import w4 from "../public/images/w4.png";
 
 const what = () => {
   const offers = [

@@ -27,13 +27,6 @@ const Hero = () => {
         <div className="absolute top-2 right-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">
           50% off
         </div>
-        {/* <Image
-          src="/images/chair1.png"
-          alt="Furniture Chair"
-          className="w-full h-auto object-contain rounded-md"
-          width={500}
-          height={500}
-        /> */}
         <Image src={pic} alt="Hero Image" className="w-full h-auto object-contain rounded-md" />
       </div>
     </div>

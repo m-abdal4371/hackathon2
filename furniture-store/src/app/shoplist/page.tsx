@@ -1,95 +1,106 @@
 import Image from 'next/image';
+import imageS1 from '../public/images/s1.png';
+import imageS2 from '../public/images/s2.png';
+import imageS3 from '../public/images/s3.png';
+import imageS4 from '../public/images/s4.png';
+import imageS5 from '../public/images/s5.png';
+import imageS6 from '../public/images/s6.png';
+import imageS7 from '../public/images/s7.png';
+import imageS8 from '../public/images/s8.png';
+import imageS9 from '../public/images/s9.png';
+import imageS10 from '../public/images/s10.png';
+import imageS11 from '../public/images/s11.png';
 const FeaturedProducts = () => {
   const products = [
     {
       id: 1,
-      name: "Cantilever chair",
+      name: "Vel elit euismod",
       code: "YU023",
       price: "$26:00",
-      image: "/images/s1.png", 
+      image: imageS1, 
     },
     {
       id: 2,
-      name: "Cantilever chair",
+      name: "Ultricies condimentum imperdiet",
       code: "YU024",
       price: "$26:00",
-      image: "/images/s2.png",
+      image: imageS2,
       isNew: true,
     },
     {
       id: 3,
-      name: "Cantilever chair",
+      name: "Vitae suspendisse sed",
       code: "YU025",
       price: "$26.00",
-      image: "/images/s3.png",
+      image: imageS3,
     },
     {
       id: 4,
-      name: "Cantilever chair",
+      name: "Sed at fermentum",
       code: "YU026",
       price: "$26.00",
-      image: "/images/s4.png",
+      image: imageS4,
     },
 
     {
         id: 5,
-        name: "Cantilever chair",
+        name: "Fusce pellentesque at",
         code: "YU023",
         price: "$26.00",
-        image: "/images/s5.png", 
+        image: imageS5, 
       },
       {
         id: 6,
-        name: "Cantilever chair",
+        name: "Vestibulum magna laoreet",
         code: "YU024",
         price: "$26.00",
-        image: "/images/s6.png",
+        image: imageS6,
         isNew: true,
       },
       {
         id: 7,
-        name: "Cantilever chair",
+        name: "Sollicitudin amet orci",
         code: "YU025",
         price: "$26.00",
-        image: "/images/s7.png",
+        image: imageS7,
       },
       {
         id: 8,
-        name: "Cantilever chair",
+        name: "Ultrices mauris sit",
         code: "YU026",
         price: "$26.00",
-        image: "/images/s8.png",
+        image: imageS8,
       },
 
       
     {
         id: 9,
-        name: "Cantilever chair",
+        name: "Pellentesque condimentum ac",
         code: "YU023",
         price: "$26.00",
-        image: "/images/s9.png", 
+        image: imageS9, 
       },
       {
         id: 10,
-        name: "Cantilever chair",
+        name: "Cras scelerisque velit",
         code: "YU024",
         price: "$26.00",
-        image: "/images/s10.png",
+        image: imageS10,
         isNew: true,
       },
       {
         id: 11,
-        name: "Cantilever chair",
+        name: "Lectus vulputate faucibus",
         code: "YU025",
         price: "$26.00",
-        image: "/images/s11.png",
+        image: imageS11,
       },
       {
         id: 12,
-        name: "Cantilever chair",
+        name: "Purus risus, ut",
         code: "YU026",
         price: "$26.00",
-        image: "/images/s4.png",
+        image: imageS4,
       },
   ];
 
@@ -128,7 +139,7 @@ const FeaturedProducts = () => {
             <span className="w-2 h-2 rounded-full bg-pink-500"></span>
             <span className="w-2 h-2 rounded-full bg-yellow-500"></span>
           </div>
-          <p className="text-sm text-gray-500">Code: {product.code}</p>
+          {/* <p className="text-sm text-gray-500">Code: {product.code}</p> */}
           <p className="text-xl font-bold text-gray-900">{product.price}</p>
             </div>
           </div>
